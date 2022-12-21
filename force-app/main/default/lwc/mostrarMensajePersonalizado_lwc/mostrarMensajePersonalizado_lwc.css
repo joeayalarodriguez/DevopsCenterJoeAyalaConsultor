@@ -1,0 +1,19 @@
+.alignitems{
+    display: flex;
+    align-items: center;
+}
+
+.iconCustom {
+    --sds-c-icon-color-foreground-default: rgb(6, 140, 100);;
+}
+.iconCustomred {
+    --sds-c-icon-color-foreground-default: rgb(123, 5, 25);;
+}
+
+.my-aswiconbackg {
+    --sds-c-icon-color-background: rgb(6,116,140);;
+}
+
+.my-aswiconobj {
+    --sds-c-icon-color-background: rgb(255,208,0); 
+  }

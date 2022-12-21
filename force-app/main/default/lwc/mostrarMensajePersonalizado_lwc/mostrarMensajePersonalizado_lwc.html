@@ -1,0 +1,47 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 07-27-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+  <div class="slds-scrollable_x" style="overflow-x:clip">
+    <div class=" myheader slds-page-header slds-page-header_record-home">
+      <div class="slds-page-header__row slds-page-header__row_gutters"> 
+             <template if:true={iscompletedfields}>
+              <div class="slds-page-header__col-details">
+                <ul class="slds-page-header__detail-row">
+                  <li class="slds-page-header__detail-block">
+                    <div  class= "slds-align_absolute-center"  title="Field 1">  <lightning-icon icon-name="utility:product_transfer_state" class="iconCustom" title="creation" size="x-small"></lightning-icon>
+                      </div>
+                    <div class="slds-truncate" title="Caso creado" if:true={record.strSetQuejas}>{record.strSetQuejas}</div>
+                  </li>
+                  <li class="slds-page-header__detail-block">
+                    <div class= "slds-align_absolute-center" title="Field 2"> <lightning-icon icon-name="utility:lower_flag" class="iconCustomred" title="update" size="x-small"></lightning-icon>  
+                     </div>
+                    <div class="slds-truncate" title="Sucursal" if:true={record.strUpdateQuejas}>{record.strUpdateQuejas}</div>
+                  </li>
+                  <li class="slds-page-header__detail-block">
+                    <div class= "slds-align_absolute-center" title="Field 2"> <lightning-icon icon-name="utility:steps" class="iconCustom" title="update" size="x-small"></lightning-icon>  
+                     </div>
+                    <div class="slds-truncate" title="Sucursal" if:true={record.strUpdateQuejas}>{record.strUpdateQuejas}</div>
+                  </li>                 
+                  <li class="slds-page-header__detail-block">
+                    <div class= "slds-align_absolute-center" title="Field 2"> <lightning-icon icon-name="utility:monthlyview" class="iconCustom" title="update" size="x-small"></lightning-icon>  
+                     </div>
+                    <div class="slds-truncate" title="Sucursal" if:true={record.strUpdateQuejas}>{record.strfechaultimactividad}</div>
+                  </li>
+                  <li class="slds-page-header__detail-block">
+                    <div class= "slds-align_absolute-center" title="Field 2"> <lightning-icon icon-name="utility:monthlyview" class="iconCustom" title="update" size="x-small"></lightning-icon>  
+                     </div>
+                    <div class="slds-truncate" title="Fecha última actualización" if:true={record.strUpdateQuejas}>{record.strfechaultimactividad}</div>
+                  </li>
+                </ul>
+              </div>
+             </template> 
+              
+            </div>           
+      </div>
+    </div>
+</template>
